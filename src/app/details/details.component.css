@@ -1,0 +1,10 @@
+:host ::ng-deep app-child .list {
+  width: 70%;
+}
+:host ::ng-deep app-child .card {
+  margin: 0 auto;
+}
+.married {
+  background-color: rgb(234, 237, 240);
+  color: rgb(124, 124, 120);
+}

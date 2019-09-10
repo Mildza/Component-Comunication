@@ -1,0 +1,13 @@
+<div class="card list">
+  <div class="card-header" [class.card-header-visited]="visitPerson === item.id">
+    <h3>{{ item.firstname }} {{ item.lastname }}</h3>
+  </div>
+  <img class="card-img-top" src="../../assets/images/{{ item.image }}" alt="Card image cap" />
+  <div class="card-body">
+    <h5 class="card-title">age: {{ item.age }}</h5>
+  </div>
+  <div class="card-footer text-muted">{{ item.gender }}</div>
+
+  <ng-content select=".married"></ng-content>
+</div>
+<h5 *ngIf="displayPersons">Number of Persons: {{ personNum }}</h5>

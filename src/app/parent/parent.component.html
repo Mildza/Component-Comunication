@@ -1,0 +1,19 @@
+<div class="items">
+  <div *ngFor="let items of data">
+    <div class="pointer" (click)="onClick(items.id)">
+      <app-child [item]="items" [personNum]="numOfPersons" [visitPerson]="visitPerson"></app-child>
+    </div>
+  </div>
+</div>
+
+<div class="single">
+  <h4>Previous Person: {{ previousPerson ? previousPerson.firstname : 'No one' }}</h4>
+  <button class="btn btn-info" (click)="nextPerson()">View Next</button>
+  <app-child
+    [item]="personToDisplay"
+    (previous)="onChange($event)"
+    [personNum]="numOfPersons"
+    [displayPersons]="toDisplay"
+  >
+  </app-child>
+</div>

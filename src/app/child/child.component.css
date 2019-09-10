@@ -1,0 +1,17 @@
+img {
+  width: 100px;
+  min-height: 130px;
+  margin: 0 auto;
+}
+.list {
+  width: 18rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.card-header-visited {
+  background-color: lightpink;
+}
