@@ -7,7 +7,8 @@ import { Person } from '../models/Person';
   styleUrls: ['./child.component.css'],
 })
 export class ChildComponent implements OnInit, OnChanges {
-  @Input() item: Person[];
+
+  @Input() item: Person;
   @Input() displayPersons: boolean;
   @Input() visitPerson: number;
   @Output() previous: EventEmitter<Person> = new EventEmitter();
