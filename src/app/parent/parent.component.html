@@ -1,5 +1,6 @@
+<input class="mt-2" [(ngModel)]="searchTerm" placeholder="Search Persons" />
 <div class="items">
-  <div *ngFor="let items of data">
+  <div *ngFor="let items of filteredPersons">
     <div class="pointer" (click)="onClick(items.id)">
       <app-child [item]="items" [personNum]="numOfPersons" [visitPerson]="visitPerson"></app-child>
     </div>

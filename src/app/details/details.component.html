@@ -2,6 +2,8 @@
   <app-child [item]="items">
     <div class="married">Married: {{ items.married }}</div>
   </app-child>
-  <button class="btn btn-danger mt-3" [routerLink]="['/parent', { id: id }]">Back</button>
+  <button class="btn btn-danger mt-3" [routerLink]="['/parent', { id: id }]" queryParamsHandling="preserve">
+    Back
+  </button>
   <button class="btn btn-success ml-3 mt-3" (click)="nextPerson()">Next Person</button>
 </div>
